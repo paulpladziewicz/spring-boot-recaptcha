@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+body, input, input::placeholder, button {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.025rem;
+}
+label, input, button, #subscribe-result {
+    font-size: 18px;
+}
+
+form {
+    width: 500px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+input {
+    display: block;
+}
+
+input, button {
+    width: 100%;
+    padding: 15px;
+    margin: 8px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+small {
+    margin-bottom: 8px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.success {
+    color: green;
+}
+
+.failure {
+    color: red;
+}
+
+.spinner {
+    display: inline-block;
+}
+.spinner:after {
+    content: " ";
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 6px solid #007bff;
+    border-color: #007bff transparent #007bff transparent;
+    animation: spinner 1.2s linear infinite;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.grecaptcha-badge {
+    display: none;
+}
