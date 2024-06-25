@@ -36,6 +36,7 @@ public class SubscribeController {
         MultiValueMap<String, String> map = new LinkedMultiValueMap<>();
         map.add("secret", recaptchaSecret);
         map.add("response", recaptchaToken);
+        map.add("resource", "something else");
 
         HttpEntity<MultiValueMap<String, String>> request = new HttpEntity<>(map, headers);
 
